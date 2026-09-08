@@ -1,20 +1,54 @@
-# Job Portal System
+## Frontend Setup Instructions
 
-## Team Members
-- Komal Mishra
--manisha Uprety
--sheikh mahmudal
-Hawa y Munjya
+### 1. Navigate to the client folder
 
+Open the terminal in VS Code and run:
 
-## Project Domain
-Recruitment & Human Resources
+```bash
+cd client
+```
 
-## Project Description
-A full-stack recruitment web platform designed to streamline hiring by connecting job seekers, employers, and system administrators.
+### 2. Install dependencies
 
-## Technology Stack
-* MongoDB
-* Express.js
+Run the following command:
+
+```bash
+npm install
+```
+
+This installs all the required dependencies for the React application.
+
+### 3. Start the development server
+
+Run:
+
+```bash
+npm run dev
+```
+
+### 4. Open the application
+
+After running the command, the terminal will show a local URL, usually:
+
+```text
+http://localhost:5173/
+```
+
+Open this URL in your web browser to view the React application.
+
+### 5. Build the application
+
+To create a production build, run:
+
+```bash
+npm run build
+```
+
+### Frontend Technologies
+
 * React.js
-* Node.js
+* Vite
+* JavaScript
+* HTML
+* CSS
+* React Router
