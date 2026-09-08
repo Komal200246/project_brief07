@@ -1,8 +1,18 @@
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+
 function MainLayout() {
   return (
-    <div>
-      <h1>Main Layout</h1>
-    </div>
+    <>
+      <Navbar />
+
+      <main>
+        <h1>Job Portal System</h1>
+        <p>Welcome to the Job Portal System.</p>
+      </main>
+
+      <Footer />
+    </>
   );
 }
 
