@@ -1,8 +1,8 @@
 function Profile() {
   return (
     <div>
-      <h1>Profile</h1>
-      <p>View and manage your profile information.</p>
+      <h1>Profile Page</h1>
+      <p>Profile is working!</p>
     </div>
   );
 }

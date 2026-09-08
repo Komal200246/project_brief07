@@ -1,20 +1,20 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "../Pages/Home/Home";
-import Login from "../Pages/Login/Login";
-import Dashboard from "../Pages/Dashboard/Dashboard";
-import Profile from "../Pages/Profile/Profile";
-import NotFound from "../Pages/NotFound/NotFound";
+import Home from "../pages/Home/Home";
+import Login from "../pages/Login/Login";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Profile from "../pages/Profile/Profile";
 
 function AppRoutes() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
