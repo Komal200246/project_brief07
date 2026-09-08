@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
@@ -7,8 +8,7 @@ function MainLayout() {
       <Navbar />
 
       <main>
-        <h1>Job Portal System</h1>
-        <p>Welcome to the Job Portal System.</p>
+        <Outlet />
       </main>
 
       <Footer />

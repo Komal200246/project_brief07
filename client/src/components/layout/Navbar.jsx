@@ -1,7 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav>
-      <h2>Job Portal</h2>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/login">Login</NavLink>
+      <NavLink to="/dashboard">Dashboard</NavLink>
+      <NavLink to="/profile">Profile</NavLink>
     </nav>
   );
 }
