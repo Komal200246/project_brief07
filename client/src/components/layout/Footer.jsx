@@ -1,7 +1,8 @@
 function Footer() {
   return (
-    <footer>
-      <p>© 2026 Job Portal System</p>
+    <footer className="footer">
+      <p>Job Portal</p>
+      <span>© 2026 Job Portal. All rights reserved.</span>
     </footer>
   );
 }
