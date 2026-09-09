@@ -1,49 +1,33 @@
-import PageTitle from "../../components/ui/PageTitle";
 import Card from "../../components/ui/Card";
-import Button from "../../components/ui/Button";
+import "../../styles/components.css";
 
 function Jobs() {
   return (
-    <div className="jobs-page">
+    <div>
+      <h1>Available Jobs</h1>
 
-      <PageTitle
-        eyebrow="JOB OPPORTUNITIES"
-        description="Explore available opportunities and find the right job for you."
-      >
-        Available Jobs
-      </PageTitle>
-
-      <div className="jobs-grid">
-
+      <div className="job-grid">
         <Card
           title="Frontend Developer"
-          description="React • JavaScript • CSS"
-        >
-          <Button>
-            Apply Now
-          </Button>
-        </Card>
-
-        <Card
-          title="MERN Stack Developer"
-          description="MongoDB • Express • React • Node.js"
-        >
-          <Button>
-            Apply Now
-          </Button>
-        </Card>
+          company="ABC Technologies"
+          location="Guwahati"
+          type="Full Time"
+        />
 
         <Card
           title="Backend Developer"
-          description="Node.js • Express • MongoDB"
-        >
-          <Button>
-            Apply Now
-          </Button>
-        </Card>
+          company="XYZ Solutions"
+          location="Delhi"
+          type="Full Time"
+        />
 
+        <Card
+          title="UI/UX Designer"
+          company="Creative Studio"
+          location="Bangalore"
+          type="Part Time"
+        />
       </div>
-
     </div>
   );
 }

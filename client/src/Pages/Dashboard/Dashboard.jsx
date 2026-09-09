@@ -1,52 +1,26 @@
-import PageTitle from "../../components/ui/PageTitle";
-import Card from "../../components/ui/Card";
-
-function Dashboard() {
+export default function Dashboard() {
   return (
-    <div className="dashboard-page">
+    <div className="hero-card" style={{ textAlign: "left" }}>
+      <span className="hero-subtitle">RECRUITMENT DASHBOARD</span>
+      <h1 className="hero-title" style={{ textAlign: "left" }}>Recruitment Dashboard</h1>
+      <p className="hero-description" style={{ margin: "0 0 1.5rem 0", textAlign: "left" }}>
+        Overview of active applications, posted jobs, and recruitment metrics.
+      </p>
 
-      <div className="dashboard-card">
-
-        <PageTitle
-          eyebrow="DASHBOARD"
-          description="Manage your job applications and explore new opportunities."
-        >
-          Welcome Back
-        </PageTitle>
-
-        <div className="stats-grid">
-
-          <Card
-            title="Applications"
-            description="12 Applications submitted"
-          />
-
-          <Card
-            title="Saved Jobs"
-            description="8 Jobs saved to view"
-          />
-
-          <Card
-            title="Profile Status"
-            description="80% Profile completion"
-          />
-
+      <div className="card-grid">
+        <div className="feature-card">
+          <h3>Active Job Listings</h3>
+          <p>12 job postings currently accepting applications.</p>
         </div>
-
-        <div className="activity">
-
-          <h3>Recent Activity</h3>
-
-          <p>
-            Your recent job activity will appear here.
-          </p>
-
+        <div className="feature-card">
+          <h3>Total Applications Received</h3>
+          <p>148 candidate applications submitted this week.</p>
         </div>
-
+        <div className="feature-card">
+          <h3>Shortlisted Candidates</h3>
+          <p>24 applicants selected for technical interview stage.</p>
+        </div>
       </div>
-
     </div>
   );
 }
-
-export default Dashboard;

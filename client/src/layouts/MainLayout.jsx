@@ -1,20 +1,16 @@
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
+import Navbar from '../components/layout/Navbar';
 
-function MainLayout({ children }) {
+export default function MainLayout({ children }) {
   return (
-    <div className="app-layout">
-
+    <div className="app-container">
       <Navbar />
-
       <main className="main-content">
         {children}
       </main>
-
-      <Footer />
-
+      <footer className="footer">
+        <h4>Job Portal</h4>
+        <p>&copy; 2026 Job Portal. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
-
-export default MainLayout;

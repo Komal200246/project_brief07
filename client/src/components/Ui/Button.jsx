@@ -1,13 +1,10 @@
-function Button({ children, onClick, type = "button" }) {
+function Card({ title, description }) {
   return (
-    <button
-      className="btn"
-      type={type}
-      onClick={onClick}
-    >
-      {children}
-    </button>
+    <div className="card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
   );
 }
 
-export default Button;
+export default Card;

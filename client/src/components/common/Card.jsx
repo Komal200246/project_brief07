@@ -1,8 +1,23 @@
-function Card() {
+function Card({ title, company, location, type }) {
   return (
-    <div>
-      <h3>Job Card</h3>
-      <p>Job information will appear here.</p>
+    <div className="job-card">
+      <h3>{title}</h3>
+
+      <p>
+        <strong>Company:</strong> {company}
+      </p>
+
+      <p>
+        <strong>Location:</strong> {location}
+      </p>
+
+      <p>
+        <strong>Job Type:</strong> {type}
+      </p>
+
+      <button className="apply-btn">
+        Apply Now
+      </button>
     </div>
   );
 }

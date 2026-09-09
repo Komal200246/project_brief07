@@ -1,53 +1,24 @@
-import PageTitle from "../../components/ui/PageTitle";
-import Button from "../../components/ui/Button";
+import "./Login.css";
 
-function Login() {
+export default function Login() {
   return (
-    <div className="login-page">
+    <div className="login-container">
+      <h2>Portal Sign In</h2>
+      <p style={{ color: "#64748b", fontSize: "0.9rem" }}>Sign in to apply for jobs or manage job postings.</p>
 
-      <div className="login-card">
+      <form className="login-form">
+        <div className="form-group">
+          <label htmlFor="email">Email Address</label>
+          <input type="email" id="email" placeholder="user@example.com" required />
+        </div>
 
-        <PageTitle
-          eyebrow="WELCOME BACK"
-          description="Sign in to access your Job Portal account."
-        >
-          Sign In
-        </PageTitle>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
 
-        <form>
-
-          <div className="form-group">
-            <label>Email Address</label>
-
-            <input
-              type="email"
-              placeholder="john@example.com"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Password</label>
-
-            <input
-              type="password"
-              placeholder="Enter your password"
-            />
-          </div>
-
-          <Button type="submit">
-            Sign In
-          </Button>
-
-        </form>
-
-        <p className="login-footer">
-          Don't have an account? Create one to get started.
-        </p>
-
-      </div>
-
+        <button type="submit" className="login-btn">Sign In</button>
+      </form>
     </div>
   );
 }
-
-export default Login;
