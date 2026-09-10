@@ -5,6 +5,7 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import Profile from "../pages/Profile/Profile";
 import Login from "../pages/Login/Login";
 import Jobs from "../pages/Jobs/Jobs";
+import Companies from "../pages/Companies/Companies";
 import NotFound from "../pages/NotFound/NotFound";
 
 function AppRoutes() {
@@ -34,6 +35,11 @@ function AppRoutes() {
       <Route
         path="/jobs"
         element={<Jobs />}
+      />
+
+      <Route
+        path="/companies"
+        element={<Companies />}
       />
 
       <Route
