@@ -8,6 +8,7 @@ import Profile from "./Pages/Profile/Profile";
 import Login from "./Pages/Login/Login";
 import Jobs from "./Pages/Jobs/Jobs";
 import Companies from "./Pages/companies/Companies";
+import JobPostingForm from "./Pages/JobPosting/JobPosting";
 
 export default function App() {
   return (
@@ -28,6 +29,8 @@ export default function App() {
           <Route path="/jobs" element={<Jobs />} />
 
           <Route path="/companies" element={<Companies />} />
+
+          <Route path="/post-job" element={<JobPostingForm />} />
 
           <Route
             path="*"

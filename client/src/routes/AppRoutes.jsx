@@ -7,6 +7,7 @@ import Login from "../pages/Login/Login";
 import Jobs from "../pages/Jobs/Jobs";
 import Companies from "../pages/Companies/Companies";
 import NotFound from "../pages/NotFound/NotFound";
+import JobPostingForm from "../pages/JobPosting/JobPosting";
 
 function AppRoutes() {
   return (
@@ -40,6 +41,11 @@ function AppRoutes() {
       <Route
         path="/companies"
         element={<Companies />}
+      />
+
+      <Route
+        path="/post-job"
+        element={<JobPostingForm />}
       />
 
       <Route
